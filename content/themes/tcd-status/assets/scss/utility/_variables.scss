@@ -1,0 +1,60 @@
+/**
+ * _variables.scss
+ */
+
+/*
+Typography
+ */
+/* Variables */
+$sans-serif: 'Open Sans', Helvetica, sans-serif;
+$serif: Georgia, serif;
+
+/* Definitions */
+$body-font: $sans-serif;
+$heading-font: $sans-serif;
+
+/* Sizes */
+$font-size-xs: 14px !default;
+$font-size-sm: 15px !default;
+$font-size-lg: 16px !default;
+
+/*
+Colors
+ */
+// brand color map function
+@function brand-color($key: 'blue') {
+  @return map-get($brand-colors, $key);
+}
+
+/* Variables */
+$brand-colors: (
+  'blue': #1B2139,
+  'gray-dark': #404040,
+  'gray-light': #DDD,
+  'orange': #FFB218
+);
+
+/* Definitions */
+$text-color: brand-color('gray-dark');
+$heading-color: $text-color;
+$link-color: brand-color('orange');
+
+$border-color: brand-color('gray-light');
+$logo-color: brand-color('blue');
+
+/* Social */
+$facebook: #415696;
+$twitter: #4FA6DD;
+
+/*
+Breakpoints
+ */
+$break-xs: 35rem;
+$break-sm: 48rem;
+$break-md: 62rem;
+$break-lg: 75rem;
+
+/*
+Margins
+ */
+$margin-p: 1.3rem;

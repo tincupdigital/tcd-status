@@ -1,0 +1,22 @@
+/**
+ * _footer.scss
+ */
+
+/*
+Footer
+ */
+.site-footer {
+  font-size: 0.875rem;
+}
+
+/*
+Sticky Footer
+ */
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1 1 auto;
+}

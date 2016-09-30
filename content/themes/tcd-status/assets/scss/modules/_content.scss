@@ -1,0 +1,54 @@
+/**
+ * _content.scss
+ */
+
+/*
+Global
+ */
+.site {
+  background-color: white;
+}
+.site-content {
+  margin-bottom: 2.5rem;
+}
+.entry-content {
+  padding: 1.5rem 2.25rem;
+  background-color: white;
+  border: 1px solid $border-color;
+
+  @include break-sm {
+    padding: 2.25rem 3rem;
+  }
+}
+
+/*
+Phases
+ */
+.project-phase {
+  margin-bottom: 2rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.project-phase__title {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $border-color;
+}
+
+/*
+Rounds
+ */
+.project-round {
+  ul, ol {
+    margin-top: 0;
+  }
+}
+.project-round__title {
+  margin: 0.25rem 0 0.75rem;
+}
+.checkmark {
+  display: inline;
+  margin-left: 0.175rem;
+  color: green;
+}
