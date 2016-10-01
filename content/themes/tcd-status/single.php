@@ -65,7 +65,7 @@ get_header(); ?>
                                       $date = DateTime::createFromFormat( 'Ymd', $row['round_date'] ); ?>
 
                                       <div class="round-date">
-                                        <span class="txt-light txt-small"><?php echo $date->format( 'F j, Y' ); ?></span>
+                                        <span class="small color-text--light"><?php echo $date->format( 'F j, Y' ); ?></span>
                                       </div>
                                     <?php } ?>
 

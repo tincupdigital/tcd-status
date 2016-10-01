@@ -43,3 +43,8 @@ Mixins
 .screen-reader-text, .srt {
   @include screen-reader-text;
 }
+
+/*
+Text
+ */
+.color-text--light { color: $text-color--light; }

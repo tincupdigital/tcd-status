@@ -36,6 +36,8 @@ $brand-colors: (
 
 /* Definitions */
 $text-color: brand-color('gray-dark');
+$text-color--light: lighten($text-color, 25%);
+
 $heading-color: $text-color;
 $link-color: brand-color('orange');
 

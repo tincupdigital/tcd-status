@@ -19,6 +19,8 @@ define( 'DB_HOST', 'localhost' );
 /**
  * Content directories
  */
+// add subdirectory before /content in WP_CONTENT_URL if
+// site is installed to a subdirectory of the domain.
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
 
@@ -29,6 +31,8 @@ $table_prefix  = 'xyz_';
 
 /**
  * Authentication keys and salts
+ *
+ * @link https://api.wordpress.org/secret-key/1.1/salt/
  */
 define('AUTH_KEY',         'put your unique phrase here');
 define('SECURE_AUTH_KEY',  'put your unique phrase here');
