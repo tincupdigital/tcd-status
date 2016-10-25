@@ -4,11 +4,6 @@ Define variables for production setup
 */
 
 /**
- * Development variable
- */
-define( 'WP_LOCAL_DEV', false );
-
-/**
  * MySQL configuration
  */
 define( 'DB_NAME', 'database_name_here' );
@@ -42,6 +37,19 @@ define('AUTH_SALT',        'put your unique phrase here');
 define('SECURE_AUTH_SALT', 'put your unique phrase here');
 define('LOGGED_IN_SALT',   'put your unique phrase here');
 define('NONCE_SALT',       'put your unique phrase here');
+
+/**
+ * Miscellaneous settings
+ */
+define( 'WP_POST_REVISIONS', 5 );
+define( 'DISALLOW_FILE_EDIT', true );
+
+/**
+ * Debugging stuff
+ */
+// define( 'WP_DEBUG', true );
+// define( 'WP_DEBUG_DISPLAY', false );
+// define( 'WP_DEBUG_LOG', true );
 
 /**
  * Load WordPress

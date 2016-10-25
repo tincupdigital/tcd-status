@@ -52,7 +52,7 @@ add_action( 'wp_dashboard_setup', '_s_remove_dash_widgets' );
 function _s_custom_welcome_panel() {
   $html =  '<div class="welcome-panel-content" style="padding-bottom: 23px;">';
   $html .= '<h2 style="margin-bottom: 5px;">Welcome to your site!</h2>';
-  $html .= '<p style="font-size: 16px; margin: 0;">Click anywhere on the left-hand side to get started.</p>';
+  $html .= '<p style="font-size: 16px; margin: 0;">Click anywhere on the left-hand side to get started. Just for reference, your IP address is <code>' . $_SERVER['SERVER_ADDR'] . '</code>. Good luck!</p>';
   $html .= '</div>';
   echo $html;
 }

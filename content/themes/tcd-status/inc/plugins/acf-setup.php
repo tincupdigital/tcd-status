@@ -5,7 +5,7 @@
  * @package _s
  */
 
-if ( !WP_LOCAL_DEV ) {
+if ( WP_LOCAL_DEV ) {
   return;
 }
 
