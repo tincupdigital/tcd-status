@@ -14,6 +14,7 @@ define( 'DB_HOST', 'localhost' );
 /**
  * Content directories
  */
+// add subfolder before /content if site is not located in domain root
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/starter/content' );
 

@@ -24,19 +24,6 @@ function _s_custom_image_sizes() {
 add_action( 'init', '_s_custom_image_sizes' );
 
 /**
- * Hide update notices for all but me
- */
-function _s_hide_update_notices_all() {
-  if ( wp_get_current_user()->user_login !== 'sean' ) {
-    global $wp_version;
-    return(object) array( 'last_checked' => time(), 'version_checked' => $wp_version );
-  }
-}
-add_filter( 'pre_site_transient_update_core', '_s_hide_update_notices_all' );
-add_filter( 'pre_site_transient_update_plugins', '_s_hide_update_notices_all' );
-add_filter( 'pre_site_transient_update_themes', '_s_hide_update_notices_all' );
-
-/**
  * Remove dashboard widgets
  */
 function _s_remove_dash_widgets() {

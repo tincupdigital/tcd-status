@@ -27,12 +27,6 @@ function my_theme_register_required_plugins() {
       'force_activation' => true
     ),
     array(
-      'name' => 'Imsanity',
-      'slug' => 'imsanity',
-      'required' => true,
-      'force_activation' => true
-    ),
-    array(
       'name' => 'Soil',
       'slug' => 'soil',
       'source' => 'https://github.com/roots/soil/archive/master.zip',
@@ -53,8 +47,8 @@ function my_theme_register_required_plugins() {
       'force_activation' => true
     ),
     array(
-      'name' => 'WP Super Cache',
-      'slug' => 'wp-super-cache',
+      'name' => 'WP Fastest Cache',
+      'slug' => 'wp-fastest-cache',
       'required' => true,
       'force_activation' => false
     )
